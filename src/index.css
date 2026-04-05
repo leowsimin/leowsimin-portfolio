@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap");
+@import "tailwindcss";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace, 'Kalam' , 'Judson';
+    background: #ffffff;
+    color: #000000;
+}
+
+textpath {
+    font-family: Kalam;
+    font-size: 25px;
+}
+
+h2 {
+  font-family: Judson;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+    font-family: Judson;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p {
+    font-family: Judson;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h4 {
+    font-family: Kalam;
+    font-size: 25px;
+}
+
+h5 {
+    font-family: Judson;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h6 {
+    font-family: Judson;
+    font-size: 15px;
+    font-weight: 800;
+}
