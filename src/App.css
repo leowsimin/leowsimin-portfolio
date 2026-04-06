@@ -391,7 +391,7 @@
 .leadership-header {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 150px;
 
   padding-bottom: 30px;
 }
@@ -484,4 +484,12 @@
         width: auto;
         bottom: 0;
     }
+
+    .leadership-img {
+        height: 120px;
+    }
+
+    .leadership-header {
+        width: 150px;
+        }
 }
