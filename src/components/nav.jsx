@@ -49,7 +49,7 @@ function NavBar() {
                 <p>Work</p>
             </Link>
             <Link className="nav-item" to="/">
-                <img src={meicon} alt="Me" />
+                <img className="meicon" src={meicon} alt="Me" />
             </Link>
             <Link
                 className="nav-item"

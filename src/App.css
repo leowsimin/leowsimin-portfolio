@@ -496,4 +496,9 @@
     .timeline-image-right-gap img {
         padding-left: 200px;
     }
+
+    .nav-item .meicon {
+        width: 30px;
+        height: 30px;
+    }
 }
