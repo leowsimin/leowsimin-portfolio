@@ -59,18 +59,14 @@ function Home() {
         <div className={`home-container ${contentVisible ? "content-visible" : ""}`}>
         
             <svg viewBox="0 25 300 50" width="300" height="65" style={{flexShrink: 0}}>
-                <defs>
-                    <style>
-                        {`@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');`}
-                    </style>
-                </defs>
+                
                 <path
                     id="curve"
                     d="M 50 100 A 100 50 0 0 1 250 100"
                     fill="transparent"
                     // stroke="red"
                 />
-                <text fontSize="18" textAnchor="middle" fill="black">
+                <text style={{fontFamily: "'Kalam', cursive"}} fontSize="18" textAnchor="middle" fill="black">
                     <textPath href="#curve" startOffset="50%">
                     introduction
                     </textPath>
