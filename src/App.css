@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;      /* vertical center */
-  height: 100vh;            /* full screen height */
+  height: 100dvh;            /* full screen height */
   max-width: 600px;
 
   padding: 30px;
@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;  /* centers wrapper vertically */
-    height: 100vh;
+    height: 100dvh;
     max-width: 600px;
     width: 100%;
 
