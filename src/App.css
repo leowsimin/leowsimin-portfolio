@@ -92,6 +92,8 @@
     flex-direction: column;
     justify-content: center;  /* horizontal center */
     align-items: center;
+
+    margin-top: -20px;  /* pull it up */
 }
 
 .degree-container {
@@ -351,7 +353,7 @@
 }
 
 .work-container {
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .timeline-left-with-image {
