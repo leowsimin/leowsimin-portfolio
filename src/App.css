@@ -20,13 +20,24 @@
     justify-content: center;  /* centers wrapper vertically */
     height: 100dvh;
     max-width: 600px;
-    width: 100%;
 
     padding: 30px;
     margin: 0 auto;
     box-sizing: border-box;
     overflow: hidden;
+
     position: relative;  /* needed for absolute navbar */
+}
+
+.contactme-container .nav-container {
+    bottom: 30px;
+    left: 30px;   /* matches your container padding */
+    right: 30px;  /* matches your container padding */
+    width: auto;  /* let left/right control the width */
+}
+
+.contactme-container .line {
+    margin: 15px;
 }
 
 .contactme-wrapper {
@@ -35,7 +46,7 @@
     align-items: center;
     width: 400px;
 
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .contactme-container .nav-container {
@@ -51,7 +62,7 @@
   min-height: 100vh;            /* full screen height */
   max-width: 600px;
 
-  padding: 20px;
+  padding: 30px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -65,8 +76,8 @@
   align-items: center;      /* vertical center */
   min-height: 100vh;             /* full screen height */
 
-  padding: 20px;
-  margin: 0;
+  padding: 30px;
+  margin: 0 auto;
   box-sizing: border-box;
 
   overflow: visible;
@@ -121,7 +132,7 @@
 }
 
 .line {
-  width: 450px;
+  width: 350px;
   height: 2px;
   background: linear-gradient(to right, transparent, black, transparent);
   margin: 10px 0;
@@ -340,7 +351,7 @@
 }
 
 .work-container {
-  margin: 30px;
+  margin: 30px auto;
 }
 
 .timeline-left-with-image {
@@ -409,4 +420,59 @@
 .linkedin-link {
     color: black;
     text-decoration: underline;
+}
+
+@media (max-width: 430px) {
+    .home-container > img {
+        max-height: 130px;  /* shrink intro image */
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .skill-container img, .hobby-container img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .line {
+        margin: 4px 0;
+    }
+
+    .skill-container, .hobby-container {
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .hobby-item p {
+        font-size: 9px;
+    }
+
+    .nav-container {
+        width: 100%;        /* fits within mobile screen */
+        padding: 8px;
+    }
+
+    .nav-item img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .nav-item p {
+        font-size: 8px;
+    }
 }
