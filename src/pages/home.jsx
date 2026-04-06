@@ -67,7 +67,7 @@ function Home() {
                     // stroke="red"
                 />
                 <text style={{fontFamily: "'Kalam', cursive"}} fontSize="18" textAnchor="middle" fill="black">
-                    <textPath href="#curve" startOffset="50%">
+                    <textPath href="#curve" startOffset="51%">
                     introduction
                     </textPath>
                 </text>

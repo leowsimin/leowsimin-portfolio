@@ -16,7 +16,7 @@ function Work() {
                     fill="transparent"
                     // stroke="red"
                 />
-                <text fontSize="18" textAnchor="middle" fill="black">
+                <text style={{fontFamily: "'Kalam', cursive"}} fontSize="18" textAnchor="middle" fill="black">
                     <textPath href="#curve" startOffset="50%">
                     Work Experiences
                     </textPath>
