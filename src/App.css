@@ -391,7 +391,7 @@
 .leadership-header {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 200px;
 
   padding-bottom: 30px;
 }
@@ -490,6 +490,10 @@
     }
 
     .leadership-header {
-        width: 150px;
+        width: 120px;
         }
+
+    .timeline-image-right-gap img {
+        padding-left: 200px;
+    }
 }
