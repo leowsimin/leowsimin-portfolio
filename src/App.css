@@ -424,6 +424,10 @@
     text-decoration: underline;
 }
 
+.meicon {
+    width: 40px;
+}
+
 @media (max-width: 430px) {
     .home-container > img {
         max-height: 130px;  /* shrink intro image */
