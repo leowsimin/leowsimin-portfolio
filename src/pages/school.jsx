@@ -47,17 +47,39 @@ function School() {
                     <div className="timeline-dot"></div>
                     <div className="timeline-dashed"></div>
                     <div className="timeline-dot-center"></div>
-                    <span className="timeline-year">2023</span>
+                    <span className="timeline-year">2025</span>
+                </div>
+            </RevealOnScroll>
+
+             <RevealOnScroll>
+                <div className="timeline-content-left">
+                    <h6>Rainfall Prediction <br /> in Australia</h6>
+                    <p>
+                        I led a three-member team in the planning and execution of a time-series deep learning project aimed 
+                        at improving rainfall prediction accuracy in Australia. 
+                        Using LSTM and GRU architectures, we modelled temporal patterns in climate data and benchmarked our 
+                        results against current state-of-the-art predictive approaches.
+                    </p>
                 </div>
             </RevealOnScroll>
 
             <RevealOnScroll>
                 <div className="timeline-content-left">
-                    <h6>SuRE Web Application</h6>
+                    <h6>Fake News</h6>
                     <p>
-                        I led the front-end development of an invoice management web application, 
-                        building a responsive interface with React and JavaScript. 
-                        Iterative feedback reinforced the value of usability, focused design and strong frontend–backend coordination.
+                        My team and I developed and customized state-of-the-art natural language processing models, including BERT-based architectures, to tackle fake news detection. 
+                        The models achieved performance metrics comparable to recent research benchmarks, demonstrating strong generalisation and robustness. 
+                        This project was implemented using Python and PyTorch, with a focus on experimenting with model variants and evaluation strategies.
+                    </p>
+                </div>
+            </RevealOnScroll>
+
+            <RevealOnScroll>
+                <div className="timeline-content-left">
+                    <h6>NewNails</h6>
+                    <p>
+                        Developed algorithms in Rhino, Grasshopper, and Python to extract precise, smooth 3D nail models from hand scans, applying machine learning and computer vision 
+                        techniques to support eco-conscious design.
                     </p>
                 </div>
             </RevealOnScroll>
@@ -118,39 +140,17 @@ function School() {
                     <div className="timeline-dot"></div>
                     <div className="timeline-dashed"></div>
                     <div className="timeline-dot-center"></div>
-                    <span className="timeline-year">2025</span>
+                    <span className="timeline-year">2023</span>
                 </div>
             </RevealOnScroll>
 
             <RevealOnScroll>
                 <div className="timeline-content-left">
-                    <h6>Rainfall Prediction <br /> in Australia</h6>
+                    <h6>SuRE Web Application</h6>
                     <p>
-                        I led a three-member team in the planning and execution of a time-series deep learning project aimed 
-                        at improving rainfall prediction accuracy in Australia. 
-                        Using LSTM and GRU architectures, we modelled temporal patterns in climate data and benchmarked our 
-                        results against current state-of-the-art predictive approaches.
-                    </p>
-                </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll>
-                <div className="timeline-content-left">
-                    <h6>Fake News</h6>
-                    <p>
-                        My team and I developed and customized state-of-the-art natural language processing models, including BERT-based architectures, to tackle fake news detection. 
-                        The models achieved performance metrics comparable to recent research benchmarks, demonstrating strong generalisation and robustness. 
-                        This project was implemented using Python and PyTorch, with a focus on experimenting with model variants and evaluation strategies.
-                    </p>
-                </div>
-            </RevealOnScroll>
-
-            <RevealOnScroll>
-                <div className="timeline-content-left">
-                    <h6>NewNails</h6>
-                    <p>
-                        Developed algorithms in Rhino, Grasshopper, and Python to extract precise, smooth 3D nail models from hand scans, applying machine learning and computer vision 
-                        techniques to support eco-conscious design.
+                        I led the front-end development of an invoice management web application, 
+                        building a responsive interface with React and JavaScript. 
+                        Iterative feedback reinforced the value of usability, focused design and strong frontend–backend coordination.
                     </p>
                 </div>
             </RevealOnScroll>

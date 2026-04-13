@@ -40,18 +40,18 @@ function Work() {
                         <div className="timeline-dot"></div>
                         <div className="timeline-dashed"></div>
                         <div className="timeline-dot-center"></div>
-                        <span className="timeline-year">2023</span>
+                        <span className="timeline-year">2026</span>
                     </div>
                 </RevealOnScroll>
 
                 <RevealOnScroll>
                     <div className="timeline-content-left">
-                        <h6>UI/UX @ HOZ Singapore</h6>
+                        <h6>Trainee @ Maritime Port Authority of Singapore</h6>
                         <p>
-                            I designed and developed two responsive e-commerce platforms, Hoz and Tner, guiding each project from concept to deployment. 
-                            Through iterative prototyping in Figma and implementation on Shopify, I focused on creating intuitive user experiences that 
-                            improved client engagement.
-                        </p>
+                            Supported digitalisation initiatives for ship agents through the use of MPA platforms, policies, and frameworks. 
+                            Conducted research and analysis to inform digital and policy workstreams, and assisted in mapping the maritime digital ecosystem to identify 
+                            relevant partners and technology solutions. Collaborated with research institutes and technology companies to address connectivity and digital 
+                            capability challenges. Also contributed to key initiatives such as Singapore Maritime Week 2026 and the Maritime Energy Training Facility (METF). </p>
                     </div>
                 </RevealOnScroll>
                 
@@ -80,19 +80,19 @@ function Work() {
                         <div className="timeline-dot"></div>
                         <div className="timeline-dashed"></div>
                         <div className="timeline-dot-center"></div>
-                        <span className="timeline-year">2026</span>
+                        <span className="timeline-year">2023</span>
                     </div>
                 </RevealOnScroll>
                 
                 <RevealOnScroll>
                     <div className="timeline-left-with-image">
                         <div className="timeline-content-left">
-                            <h6>Trainee @ Maritime Port Authority of Singapore</h6>
+                            <h6>UI/UX @ HOZ Singapore</h6>
                             <p>
-                                Supported digitalisation initiatives for ship agents through the use of MPA platforms, policies, and frameworks. 
-                                Conducted research and analysis to inform digital and policy workstreams, and assisted in mapping the maritime digital ecosystem to identify 
-                                relevant partners and technology solutions. Collaborated with research institutes and technology companies to address connectivity and digital 
-                                capability challenges. Also contributed to key initiatives such as Singapore Maritime Week 2026 and the Maritime Energy Training Facility (METF). </p>
+                                I designed and developed two responsive e-commerce platforms, Hoz and Tner, guiding each project from concept to deployment. 
+                                Through iterative prototyping in Figma and implementation on Shopify, I focused on creating intuitive user experiences that 
+                                improved client engagement.
+                            </p>
                         </div>
                         <div className="timeline-image-right-gap">
                             <img className="degree-img" src={workImg} alt="Image of Rachel" />
