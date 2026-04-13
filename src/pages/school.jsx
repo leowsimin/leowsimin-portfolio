@@ -52,7 +52,7 @@ function School() {
             </RevealOnScroll>
 
              <RevealOnScroll>
-                <div className="timeline-content-left">
+                <div className="timeline-content-left" style={{marginBottom: '20px'}}>
                     <h6>Rainfall Prediction <br /> in Australia</h6>
                     <p>
                         I led a three-member team in the planning and execution of a time-series deep learning project aimed 
@@ -64,7 +64,7 @@ function School() {
             </RevealOnScroll>
 
             <RevealOnScroll>
-                <div className="timeline-content-left">
+                <div className="timeline-content-left" style={{marginBottom: '20px'}}>
                     <h6>Fake News</h6>
                     <p>
                         My team and I developed and customized state-of-the-art natural language processing models, including BERT-based architectures, to tackle fake news detection. 
@@ -94,7 +94,7 @@ function School() {
             </RevealOnScroll>
 
             <RevealOnScroll>
-                <div className="timeline-content-right">
+                <div className="timeline-content-right" style={{marginBottom: '20px'}}>
                     <h6>The Flying Dutchmen</h6>
                     <p>
                         I led the front-end design and development of a bar menu management 
@@ -106,7 +106,7 @@ function School() {
             </RevealOnScroll>
 
             <RevealOnScroll>
-                <div className="timeline-content-right">
+                <div className="timeline-content-right" style={{marginBottom: '20px'}}>
                     <h6>Onion Fishing Game</h6>
                     <p>
                         I led the front-end design and deployment, focusing on smooth animations and interactive experiences. 
@@ -116,7 +116,7 @@ function School() {
             </RevealOnScroll>
 
             <RevealOnScroll>
-                <div className="timeline-content-right">
+                <div className="timeline-content-right" style={{marginBottom: '20px'}}>
                     <h6>Human Pose Estimation</h6>
                     <p>
                         I researched and experimented with human pose estimation frameworks such as BlazePose and OpenPose, adapting 

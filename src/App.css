@@ -272,7 +272,6 @@
     width: calc(50% - 15px - 40px);  /* same width as from first dot to center */
     margin-left: 40px;         /* same margin-left as your first dot */
     text-align: left;
-    margin-bottom: 20px;
 
     position: relative;
 }
@@ -284,6 +283,11 @@
 .timeline-content-left h6,
 .timeline-content-left p {
     text-align: right;
+}
+
+.timeline-content-left + .timeline-content-left,
+.timeline-content-right + .timeline-content-right {
+    margin-bottom: 15px;
 }
 
 /* RIGHT SIDE OF CONTAINER 8 */
