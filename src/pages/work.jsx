@@ -26,12 +26,11 @@ function Work() {
             <div className="degree-container work-container">
                 <h5>WORKING STATUS</h5>
                 <p>
-                    Maritime Digital Capabilities Trainee at <br/>
-                    Maritime Port Authority of Singapore (MPA)
+                    Currently Not Working.
                 </p>
-                <p>
+                {/* <p>
                     January 2026 - Present
-                </p>
+                </p> */}
             </div>
     
             <div className="timeline-container">
@@ -52,6 +51,9 @@ function Work() {
                             Conducted research and analysis to inform digital and policy workstreams, and assisted in mapping the maritime digital ecosystem to identify 
                             relevant partners and technology solutions. Collaborated with research institutes and technology companies to address connectivity and digital 
                             capability challenges. Also contributed to key initiatives such as Singapore Maritime Week 2026 and the Maritime Energy Training Facility (METF). </p>
+                        <div className ="more-info-container">
+                            <button>More Info</button>
+                        </div>
                     </div>
                 </RevealOnScroll>
                 
@@ -93,6 +95,9 @@ function Work() {
                                 Through iterative prototyping in Figma and implementation on Shopify, I focused on creating intuitive user experiences that 
                                 improved client engagement.
                             </p>
+                            <div className ="more-info-container">
+                                <button>More Info</button>
+                            </div>
                         </div>
                         <div className="timeline-image-right-gap">
                             <img className="degree-img" src={workImg} alt="Image of Rachel" />

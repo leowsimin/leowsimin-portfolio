@@ -432,6 +432,107 @@
     width: 40px;
 }
 
+.more-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.more-info-container img {
+    width: 30px;
+    height: auto;
+    animation: nudge-right 1.5s ease-in-out infinite;
+}
+
+.more-info-container button, .right-more-info-container button {
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 3px 10px;
+    margin: 0;
+    font-size: 10px;
+    white-space: nowrap;
+
+    font-family: Judson;
+    font-size: 10px;
+    font-weight: 400;
+     transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.right-more-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.right-more-info-container img {
+    width: 30px;
+    height: auto;
+    transform: scaleX(-1);
+    animation: nudge-left 1.5s ease-in-out infinite;
+}
+
+.more-info-container button:hover,
+.right-more-info-container button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.more-info-container button:active,
+.right-more-info-container button:active {
+    background-color: #000;
+    color: #fff;
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes nudge-right {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(2px); }
+}
+
+/* Arrow bounce animation - right side (flipped, nudges left) */
+@keyframes nudge-left {
+    0%, 100% { transform: scaleX(-1) translateX(0); }
+    50% { transform: scaleX(-1) translateX(2px); }
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 @media (max-width: 430px) {
     .home-container > img {
         max-height: 130px;  /* shrink intro image */
@@ -510,3 +611,216 @@
         height: 30px;
     }
 }
+
+dal · CSS
+Copy
+
+/* ── Modal Overlay ─────────────────────────────────────── */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ 
+.modal-content {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    max-width: 500px;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+ 
+/* ── Header ────────────────────────────────────────────── */
+.modal-header {
+    padding: 20px 20px 0;
+    position: relative;
+}
+ 
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+ 
+.modal-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: none;
+}
+ 
+.modal-title {
+    margin: 0;
+    padding-right: 30px;
+    font-size: 15px;
+}
+ 
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 11px;
+    line-height: 1;
+    transition: background 0.15s;
+}
+ 
+.modal-close:hover {
+    background: #f0f0f0;
+}
+ 
+/* ── Tabs ──────────────────────────────────────────────── */
+.modal-tab-row {
+    display: flex;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 20px;
+    margin-top: 14px;
+    gap: 0;
+}
+ 
+.modal-tab-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 14px;
+    font-size: 12px;
+    color: #888;
+    cursor: pointer;
+    margin-bottom: -1px;
+    transition: color 0.15s, border-color 0.15s;
+    font-family: inherit;
+}
+ 
+.modal-tab-btn.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+    font-weight: 500;
+}
+ 
+.modal-tab-btn:hover:not(.active) {
+    color: #000;
+}
+ 
+/* ── Body ──────────────────────────────────────────────── */
+.modal-body {
+    padding: 16px 20px 20px;
+    overflow-y: auto;
+    flex: 1;
+}
+ 
+.modal-panel p {
+    font-size: 11px;
+    line-height: 1.7;
+    margin: 0 0 10px;
+    text-align: left;
+}
+ 
+.modal-section-label {
+    font-size: 10px;
+    font-weight: 500;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 14px 0 6px !important;
+}
+ 
+/* ── Step list (overview) ──────────────────────────────── */
+.modal-step-list {
+    padding-left: 16px;
+    margin: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+ 
+.modal-step-list li {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #000;
+}
+ 
+/* ── Badge row ─────────────────────────────────────────── */
+.modal-badge-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+ 
+.modal-badge {
+    font-size: 10px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: none;
+}
+ 
+/* ── Architecture cards (technical) ───────────────────── */
+.modal-arch-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+ 
+.modal-arch-card h6 {
+    margin: 0 0 8px;
+    font-size: 12px;
+    text-align: left;
+}
+ 
+.modal-arch-card p {
+    font-size: 11px;
+    line-height: 1.6;
+    margin: 8px 0 !important;
+    color: #555;
+    text-align: left;
+}
+ 
+/* swap this out for an <img> once you have images */
+.modal-img-placeholder {
+    background: #f5f5f5;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #aaa;
+    margin: 6px 0;
+}
+ 
+/* ── Role list (reflection) ────────────────────────────── */
+.modal-role-list {
+    padding-left: 16px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+ 
+.modal-role-list li {
+    font-size: 11px;
+    line-height: 1.5;
+}
+ 

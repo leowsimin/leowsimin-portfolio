@@ -1,10 +1,22 @@
 import { NavBar } from "../components/nav.jsx"
+import { useState } from "react"
+
 
 import schoolImg from "../assets/school-image.svg"
 
 import RevealOnScroll from "../components/revealOnScroll.jsx"
 
 function School() {
+    const [activeProject, setActiveProject] = useState(null)
+
+    const projects = {
+        rainfall: {
+            title: "Rainfall Prediction in Australia",
+            description: "I led a three-member team...",
+            // add more fields later: images, github link, etc.
+        }
+    }
+
     return(
     <div className="school-container">
         <svg viewBox="0 25 300 50" width="300" height="65">
@@ -37,6 +49,9 @@ function School() {
                 <p>
                     September 2021 – May 2025
                 </p>
+                <p>
+                    Currently doing a Masters in Geoinformatics in the Univerisity of Debrecen.
+                </p>
             </div>
             <img className="degree-img" src={schoolImg} alt="Image of Rachel" />
         </div>
@@ -60,6 +75,19 @@ function School() {
                         Using LSTM and GRU architectures, we modelled temporal patterns in climate data and benchmarked our 
                         results against current state-of-the-art predictive approaches.
                     </p>
+                    <div className ="more-info-container">
+                        <button onClick={() => setActiveProject(projects.rainfall)}>More Info</button>
+                    </div>
+
+                    {activeProject && (
+                        <div className="modal-overlay" onClick={() => setActiveProject(null)}>
+                            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                                <button className="modal-close" onClick={() => setActiveProject(null)}>✕</button>
+                                <h4>{activeProject.title}</h4>
+                                <p>{activeProject.description}</p>
+                            </div>
+                        </div>
+                    )}
                 </div>
             </RevealOnScroll>
 
@@ -71,6 +99,9 @@ function School() {
                         The models achieved performance metrics comparable to recent research benchmarks, demonstrating strong generalisation and robustness. 
                         This project was implemented using Python and PyTorch, with a focus on experimenting with model variants and evaluation strategies.
                     </p>
+                    <div className ="more-info-container">
+                        <button>More Info</button>
+                    </div>
                 </div>
             </RevealOnScroll>
 
@@ -81,6 +112,9 @@ function School() {
                         Developed algorithms in Rhino, Grasshopper, and Python to extract precise, smooth 3D nail models from hand scans, applying machine learning and computer vision 
                         techniques to support eco-conscious design.
                     </p>
+                      <div className ="more-info-container">
+                        <button>More Info</button>
+                    </div>
                 </div>
             </RevealOnScroll>
 
@@ -102,6 +136,9 @@ function School() {
                         interface in Figma to deliver a responsive experience for both customers
                         and staff.
                     </p>
+                    <div className ="right-more-info-container">
+                        <button>More Info</button>
+                    </div>
                 </div>
             </RevealOnScroll>
 
@@ -112,6 +149,9 @@ function School() {
                         I led the front-end design and deployment, focusing on smooth animations and interactive experiences. 
                         Integrated the front end with the backend and developed the application using Unreal Engine.
                     </p>
+                    <div className ="right-more-info-container">
+                        <button>More Info</button>
+                    </div>
                 </div>
             </RevealOnScroll>
 
@@ -123,6 +163,10 @@ function School() {
                         and modifying existing models to suit project-specific objectives. Through iterative experimentation, I 
                         focused on improving model accuracy and understanding the practical challenges of deploying pose estimation systems.
                     </p>
+                    <div className ="right-more-info-container">
+                        <button>More Info</button>
+                    </div>
+
                 </div>
             </RevealOnScroll>
 
@@ -132,6 +176,9 @@ function School() {
                     <p>
                         Contributed to the visual design and assisted in creating 3D models for an immersive game developed in Unity.
                     </p>
+                    <div className ="right-more-info-container">
+                        <button>More Info</button>
+                    </div>
                 </div>
             </RevealOnScroll>
 
@@ -152,6 +199,9 @@ function School() {
                         building a responsive interface with React and JavaScript. 
                         Iterative feedback reinforced the value of usability, focused design and strong frontend–backend coordination.
                     </p>
+                    <div className ="more-info-container">
+                        <button>More Info</button>
+                    </div>
                 </div>
             </RevealOnScroll>
 
