@@ -9,13 +9,13 @@ import RevealOnScroll from "../components/revealOnScroll.jsx"
 function School() {
     const [activeProject, setActiveProject] = useState(null)
 
-    const projects = {
-        rainfall: {
-            title: "Rainfall Prediction in Australia",
-            description: "I led a three-member team...",
-            // add more fields later: images, github link, etc.
-        }
-    }
+    // const projects = {
+    //     rainfall: {
+    //         title: "Rainfall Prediction in Australia",
+    //         description: "I led a three-member team...",
+    //         // add more fields later: images, github link, etc.
+    //     }
+    // }
 
     return(
     <div className="school-container">
